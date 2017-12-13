@@ -1,0 +1,54 @@
+<div class="business_letter module4" ng-controller="workwithlistsCtrl">
+
+    <h2>Lists</h2>
+
+    <h3>Board Games</h3>
+
+    <form class="col-lg-4 col-sm-4 pull-right">
+        <div class="form-group">
+            <label for="inp_filter_games">Filter expression:</label>
+            <input id="inp_filter_games" type="text" class="form-control" ng-model="filter_expr">
+        </div>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th ng-repeat="column_header in ['Name', 'Year Published', 'Actions']">
+                    {{column_header}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="board_game in filter_games(board_games) track by $index"
+                ng-class="{info : selected_board_game == board_game}">
+                <td>{{board_game.name}}</td>
+                <td>{{board_game.year_published}}</td>
+                <td>
+                    <i class="glyphicon glyphicon-zoom-in"
+                       ng-click="show_board_game_details(board_game)"
+                       title="Show board game details"/>
+                    <i class="glyphicon glyphicon-remove"
+                       ng-click="remove_board_game(board_game)"
+                       title="Remove board game from list"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div ng-if="selected_board_game">
+        <h3>{{selected_board_game.name}}</h3>
+
+        <img ng-src="{{selected_board_game.image}}" height="100">
+
+        <p>
+            {{selected_board_game.publisher}}, {{selected_board_game.year_published}}<br>
+            Rating: {{selected_board_game.rating}} Categories:
+            <span ng-repeat="category in selected_board_game.categories">
+                {{category}}<span ng-if="$index < selected_board_game.categories.length - 1">,</span>
+            </span>
+        </p>
+
+    </div>
+
+</div>

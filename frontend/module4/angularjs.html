@@ -1,0 +1,64 @@
+<div class="business_letter" ng-controller="angularjsCtrl">
+
+    <h2>AngularJS</h2>
+
+    <h3>Attributes</h3>
+
+    <p>
+        With the following attributes one can cover 99% of the requirements of a prototype.
+
+        <ul>
+            <li><code>ng-model</code> - binds the input element to a variable</li>
+            <li><code>ng-if</code> - defines the condition under which the HTML element is shown</li>
+            <li><code>ng-repeat</code> - iterates through an array</li>
+            <li><code>ng-class</code> - defines conditions under which CSS classes at the element shall be added</li>
+            <li><code>ng-click</code> - defines the method to be called when the HTML element is clicked</li>
+            <li><code>ng-init</code> - initializes a variable name, useful in nested loops to name the index variable</li>
+            <li><code>ng-include</code> - includes an HTML fragment in the page</li>
+        </ul>
+    </p>
+
+        <p>
+        The following attributes are mandatory to set up AngularJS in the page,
+        for a prototype you need them only once in the page.
+
+        <ul>
+            <li><code>ng-app</code> - marks the root element of the HTML markup AngularJS takes care of</li>
+            <li><code>ng-controller</code> - once per module</li>
+        </ul>
+    </p>
+
+    <h3>Nested Loops</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <td ng-repeat="column_header in ['Time', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']">
+                    {{column_header}}
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="rows in schedule.events track by $index" ng-init="time_index = $index">
+                <td ng-repeat="event in rows track by $index" ng-init="weekday_index = $index">
+                    <span ng-if="event" title="{{schedule.details[time_index][weekday_index-1]}}">
+                        {{event}}
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h3>Filters</h3>
+
+    <p>Formatting values via filters:</p>
+
+    <ul>
+        <li><code ng-non-bindable>{{expression | number:4}}</code> - decimals with a specific precision</li>
+        <li><code ng-non-bindable>{{expression | currency:'€':2}}</code> - money amounts</li>
+        <li><code ng-non-bindable>{{expression | date:'yyyy-MM-dd HH:mm:ss' }}</code>
+             - <a href="https://docs.angularjs.org/api/ng/filter/date">dates</a></li>
+    </ul>
+
+</div>

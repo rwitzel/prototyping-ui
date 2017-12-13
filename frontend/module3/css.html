@@ -1,0 +1,107 @@
+<div class="business_letter" ng-controller="formattingCtrl">
+    <h2>CSS</h2>
+
+    <p>
+        Basic rule: Don't try to style your page. CSS is too complicated for a novice.
+        Instead ask your colleage to style your page.
+    </p>
+
+    <h3>Selectors</h3>
+
+    <p>
+        Five different selectors for a <code>span</code> element with class <code>currency_symbol</code>
+        in a table cell in Module 1.
+        <pre>div.module1 table.review td span.currency_symbol {...}
+
+.module1 table span.currency_symbol {...}
+
+.currency_symbol {...}
+
+.module1 td > span.currency_symbol {...}
+
+.module1 span.currency_symbol, .module1 span.currency_text {...}</pre>
+    </p>
+
+    <h3>Properties</h3>
+
+    <ul>
+        <li><code>color: red;</code> Text color</li>
+        <li><code>border: 1px solid black;</code> Border</li>
+        <li><code>padding-left: 5px;</code> Inner space</li>
+        <li><code>margin-bottom: 0px;</code> Outer space</li>
+        <li><code>width: 400px;</code> Width</li>
+        <li><code>font-weight: bold;</code> Bold</li>
+        <li><code>white-space: nowrap;</code> No line break</li>
+        <li><code>background-color: lightblue;</code> Background color</li>
+        <li><code>font-size: xx-small;</code> Smaller font size</li>
+        <li><code>display: inline-block;</code> Blocks within the text flow (something between div and span)</li>
+        <li><code>float: left;</code> Separate text flow</li>
+        <li><code>text-align: center;</code> centered text, e.g. in table cells</li>
+        <li><code>border-collapse: collapse;</code> for tables the borders between table cells are collapsed</li>
+    </ul>
+
+    <h3>!Important</h3>
+
+    <p>
+        Styles from third-parties like Bootstrap can be overriden:
+        <code>any-property-name: any-property-value !important;</code>
+    </p>
+
+    <h3>Gradients</h3>
+
+    <p>
+       One can easily create dynamic gradients with <code>background-color: hsl({{hue}}, 50%, 50%);</code>.
+    </p>
+
+    <form class="col-lg-4 col-sm-4">
+        <div class="form-group">
+            <label for="inp_color_range">Color range:</label>
+            <input id="inp_color_range" type="range" class="form-control" ng-model="hue" min="0" max="100" step="1">
+        </div>
+    </form>
+
+    <style type="text/css">
+        .demo_gradient { background-color: hsl({{hue}}, 50%, 50%); }
+    </style>
+
+    <br clear="all"/>
+
+    <div class="demo_gradient col-lg-4 col-sm-4 well"></div>
+
+    <br clear="all"/>
+
+
+    <h3>Bootstrap</h3>
+
+    <p>
+        Pages styled with
+        <a href="http://getbootstrap.com/docs/3.3/">Bootstrap</a> classes look beautiful.
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Release year</th>
+                <th>Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="movie in movies">
+                <td>{{movie.name}}</td>
+                <td>{{to_date(movie.release_date) | date:'yyyy'}}</td>
+                <td>{{movie.budget.amount | currency:movie.budget.currency:2}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <p>
+        <button class="btn" data-toggle="collapse" data-target="#some_information">Collapse / Expand</button>
+    </p>
+
+    <div id="some_information" class="collapse">
+        Welcome to Bootstrap!
+    </div>
+
+</div>

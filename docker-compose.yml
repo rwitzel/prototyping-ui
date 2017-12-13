@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  # does caching (not good for prototyping) -> check how to deactivate it
+  jekyll:
+    command: jekyll serve
+    image: jekyll/jekyll:latest
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - 8081:4000

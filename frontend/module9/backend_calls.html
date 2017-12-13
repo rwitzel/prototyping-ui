@@ -1,0 +1,45 @@
+<div class="business_letter module9"  ng-controller="backendcallsCtrl">
+    <h2>Backend Calls<sup title="Storage version"><small>v{{storage_model_version()}}</small></sup></h2>
+
+    <p>
+        We use the page's
+        <a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp">local storage</a>
+        to save the user's input across page reloads.
+    </p>
+
+    <p>
+        For a more detailed example, check this
+        <a href="https://github.com/hjacobs/connexion-example">Connexion Example</a>.
+    </p>
+
+    <p>
+        <form class="col-lg-4 col-sm-4">
+            <div class="form-group">
+                <label for="inp_param1">Param1:</label>
+                <input id="inp_param1" type="text" class="form-control" ng-model="params.param1">
+            </div>
+            <div class="form-group">
+                <label for="inp_param2">Param2:</label>
+                <input id="inp_param2" type="text" class="form-control" ng-model="params.param2">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" ng-model="params.allow_caching">
+                    Allow caching
+                </label>
+            </div>
+
+            <button ng-click="fetch_command1_result()">Call command1</button>
+        </form>
+    </p>
+
+    <br clear="all"/>
+
+    <p>
+        <br/>Result:
+        <pre>{{result}}</pre>
+    </p>
+
+</div>
+
+

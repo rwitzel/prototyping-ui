@@ -1,0 +1,51 @@
+swagger: '2.0'
+info:
+  title: Prototype API
+  version: "0.1"
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /command1/{param1}/{param2}/{allow_caching}:
+    get:
+      operationId: api.command1
+      summary: Get something
+      parameters:
+        - $ref: '#/parameters/param1'
+        - $ref: '#/parameters/param2'
+        - $ref: '#/parameters/allow_caching'
+      responses:
+        200:
+          description: Return something
+          schema:
+            type: string
+        404:
+          description: Command cannot be executed
+
+
+parameters:
+  param1:
+    name: param1
+    description: |
+      First parameter.
+      Examples: abc
+    in: path
+    type: string
+    required: true
+  param2:
+    name: param2
+    description: |
+      Second parameter.
+      Examples: def
+    in: path
+    type: string
+    required: true
+  allow_caching:
+    name: allow_caching
+    description: |
+      True if a cached result is accepted by the client.
+      Examples: def
+    in: path
+    type: boolean
+    required: true

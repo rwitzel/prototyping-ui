@@ -1,0 +1,6 @@
+pandas==0.19.2
+connexion
+gevent>=1.1b1
+sqlalchemy
+flask_cors===3.0.3
+fabric3
