@@ -33,4 +33,7 @@ The webserver can be started via [docker-compose](https://docs.docker.com/compos
     python app.py
     ./test.sh
 
+## Roadmap
+
+* rework the exercise in the introduction
 
