@@ -37,18 +37,33 @@
         </tbody>
     </table>
 
-    <div ng-if="selected_board_game">
-        <h3>{{selected_board_game.name}}</h3>
+    <div ng-if="selected_board_game" class="row">
+        <div class="well col-lg-10 col-sm-10 col-lg-offset-1 col-sm-offset-1">
 
-        <img ng-src="{{selected_board_game.image}}" height="100">
+            <div class="col-lg-5 col-sm-5">
 
-        <p>
-            {{selected_board_game.publisher}}, {{selected_board_game.year_published}}<br>
-            Rating: {{selected_board_game.rating}} Categories:
-            <span ng-repeat="category in selected_board_game.categories">
-                {{category}}<span ng-if="$index < selected_board_game.categories.length - 1">,</span>
-            </span>
-        </p>
+                <h3 class="text-center">{{selected_board_game.name}}</h3>
+
+                <dl class="dl-horizontal">
+                    <dt>Published</dt>
+                    <dd>{{selected_board_game.publisher}}, {{selected_board_game.year_published}}</dd>
+                    <dt>Rating</dt>
+                    <dd>{{selected_board_game.rating}}</dd>
+                    <dt>Categories</dt>
+                    <dd>
+                        <span ng-repeat="category in selected_board_game.categories">
+                            {{category}}<span ng-if="$index < selected_board_game.categories.length - 1">,</span>
+                        </span>
+                    </dd>
+                </dl>
+
+            </div>
+
+            <div class="col-lg-5 col-sm-5 text-center">
+                <img ng-src="{{selected_board_game.image}}" height="200">
+            </div>
+
+        </div>
 
     </div>
 
