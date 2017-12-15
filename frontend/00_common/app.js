@@ -1,1 +1,1 @@
-const app = angular.module('prototypeApp', [ 'chart.js' ]);
+const app = angular.module('prototypeApp', [ 'angularjs-dropdown-multiselect', 'chart.js' ]);

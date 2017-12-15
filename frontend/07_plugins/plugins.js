@@ -1,4 +1,13 @@
 app.controller('pluginsCtrl', ($scope) => {
+
+    $scope.countries = [
+        { 'id': 'DE', 'label': 'Germany' },
+        { 'id': 'FR', 'label': 'France' },
+        { 'id': 'DK', 'label': 'Denmark' }
+    ];
+    $scope.selected_countries = [];
+
+
     $scope.chart = {
         labels : ["January", "February", "March", "April", "May", "June", "July"],
         series : ['Series A', 'Series B'],

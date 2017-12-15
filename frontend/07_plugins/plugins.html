@@ -10,9 +10,24 @@
 
     <p>Then register the directive in the application.</p>
 
-    <h4>Wrappers around other plugins</h4>
+    <p>
+        The plugin
+        <a href="http://dotansimha.github.io/angularjs-dropdown-multiselect/docs/#/main">AngularJS Dropdown Multiselect</a>
+        is using Bootstrap.
+    </p>
 
-    <p><b>Charts.js</b> is a jQuery plugin that can be used in AngularJS via wrapper.</p>
+    <div ng-dropdown-multiselect=""
+         options="countries"
+         selected-model="selected_countries">
+    </div>
+
+    <h4>Wrappers</h4>
+
+    <p>
+        The jQuery plugin
+        <a href="http://jtblin.github.io/angular-chart.js/">Charts.js</a>
+        can be used in AngularJS via wrapper.
+    </p>
 
     <canvas class="chart chart-line"
         chart-data="chart.data"
