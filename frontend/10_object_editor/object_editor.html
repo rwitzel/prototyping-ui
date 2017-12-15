@@ -1,0 +1,33 @@
+<div class="business_letter module10" ng-controller="objectEditorCtrl">
+
+    <h2>Object Editor</h2>
+
+    <p ng-class="{ 'has-error': book_json_parse_error}">
+        <span class="control-label">Book object:</span>
+        <div contenteditable="true"
+             class="preformatted_contenteditable"
+             ng-model="book_json"
+             title="Click to edit"></div>
+
+        <div ng-if="book_json_parse_error"
+             title="{{book_json_parse_error}}"
+             class="text-danger">
+            JSON is not valid
+        </div>
+    </p>
+
+    <p>
+        Book details:
+        <dl class="dl-horizontal">
+            <dt>Title</dt>
+            <dd>{{book.title}}</dd>
+            <dt>Published</dt>
+            <dd>{{book.published}}</dd>
+            <dt>Translated</dt>
+            <dd>{{book.translate ? 'Yes' : 'No'}}</dd>
+
+        </dl>
+    </p>
+
+</div>
+
