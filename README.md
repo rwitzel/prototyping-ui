@@ -34,8 +34,3 @@ The webserver can be started via [docker-compose](https://docs.docker.com/compos
     ./test.sh
 
 
-## Roadmap
-
-* Module 12: error handling (console, alert)
-
-
