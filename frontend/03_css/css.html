@@ -9,17 +9,19 @@
     <h3>Selectors</h3>
 
     <p>
-        Five different selectors for a <code>span</code> element with class <code>currency_symbol</code>
+        <pre>&lt;div class="module1"&gt; &lt;table class="review"&gt; &lt;tr&gt; &lt;td&gt; &lt;span class="currency_symbol"&gt;Text&lt;/span&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/div&gt;</pre>
+    </p>
+    <p>
+        There are numerous ways to select a <code>span</code> element with class <code>currency_symbol</code>
         in a table cell in Module 1.
-        <pre>div.module1 table.review td span.currency_symbol {...}
-
-.module1 table span.currency_symbol {...}
-
-.currency_symbol {...}
-
-.module1 td > span.currency_symbol {...}
-
-.module1 span.currency_symbol, .module1 span.currency_text {...}</pre>
+    </p>
+    <p>
+        <pre>
+div.module1 table.review td   span.currency_symbol             { color: red;   }
+   .module1 table             span.currency_symbol             { color: green; }
+                                  .currency_symbol             { color: blue;  }
+   .module1              td > span.currency_symbol             { color: black; }
+   .module1                   span.currency_symbol, .module1 p { color: grey;  }</pre>
     </p>
 
     <h3>Properties</h3>
@@ -43,7 +45,7 @@
     <h3>!Important</h3>
 
     <p>
-        Styles from third-parties like Bootstrap can be overriden:
+        Styles from third-parties like Bootstrap can be overridden:
         <code>any-property-name: any-property-value !important;</code>
     </p>
 
