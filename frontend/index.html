@@ -9,11 +9,11 @@
 
     <!-- shared resources -->
     <link  href="favicon.ico?" rel="shortcut icon" type="image/x-icon">
-    <script src="common/lib/jquery-1.11.3.min.js"></script>
-    <link  href="common/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="common/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="common/lib/angular.min.js"></script>
-    <link  href="common/common.css" rel="stylesheet">
+    <script src="00_common/lib/jquery-1.11.3.min.js"></script>
+    <link  href="00_common/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="00_common/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="00_common/lib/angular.min.js"></script>
+    <link  href="00_common/common.css" rel="stylesheet">
 
     <!-- module-specific styles -->
     <!-- (none needed yet) -->
@@ -25,14 +25,14 @@
             <div class="row dd-lg-flex-box">
                 <div class="col-lg-12 col-sm-12 dd-lg-flex-item">
 
-                    <div ng-include="'module1/introduction.html'"></div>
-                    <div ng-include="'module2/html.html'"></div>
-                    <div ng-include="'module3/css.html'"></div>
-                    <div ng-include="'module4/angularjs.html'"></div>
-                    <div ng-include="'module5/work_with_lists.html'"></div>
-                    <div ng-include="'module6/display_formulas.html'"></div>
-                    <div ng-include="'module8/patterns.html'"></div>
-                    <div ng-include="'module9/backend_calls.html'"></div>
+                    <div ng-include="'01_introduction/introduction.html'"></div>
+                    <div ng-include="'02_html/html.html'"></div>
+                    <div ng-include="'03_css/css.html'"></div>
+                    <div ng-include="'04_angularjs/angularjs.html'"></div>
+                    <div ng-include="'05_work_with_lists/work_with_lists.html'"></div>
+                    <div ng-include="'06_display_formulas/display_formulas.html'"></div>
+                    <div ng-include="'08_good_practice/good_practice.html'"></div>
+                    <div ng-include="'09_backend_calls/backend_calls.html'"></div>
 
                     <div class="end_of_page_spacer">&nbsp;</div>
                 </div>
@@ -41,19 +41,19 @@
     </div>
 
     <!-- shared code -->
-    <script src="common/common.js"></script>
-    <script src="common/object_store.js"></script>
-    <script src="common/fetch_api_error_handler.js"></script>
-    <script src="common/app.js"></script>
+    <script src="00_common/common.js"></script>
+    <script src="00_common/object_store.js"></script>
+    <script src="00_common/fetch_api_error_handler.js"></script>
+    <script src="00_common/app.js"></script>
 
     <!-- module-specific code -->
-    <script src="module3/css.js"></script>
-    <script src="module4/angularjs.js"></script>
-    <script src="module5/work_with_lists.js"></script>
+    <script src="03_css/css.js"></script>
+    <script src="04_angularjs/angularjs.js"></script>
+    <script src="05_work_with_lists/work_with_lists.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript" async ></script>
-    <script src="module6/display_formulas.js"></script>
-    <script src="module9/command1_fetcher.js"></script>
-    <script src="module9/backend_calls.js"></script>
+    <script src="06_display_formulas/display_formulas.js"></script>
+    <script src="09_backend_calls/command1_fetcher.js"></script>
+    <script src="09_backend_calls/backend_calls.js"></script>
 
 </body>
 </html>
