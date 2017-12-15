@@ -36,7 +36,6 @@ The webserver can be started via [docker-compose](https://docs.docker.com/compos
 
 ## Roadmap
 
-* Module 7: Plugins (AngularJS charts and drop down and jQuery [table of contents](https://ndabas.github.io/toc/#Live_Example)
 * Module 10: JSON Editor
 * Module 11: Javascript (Object.assign etc.)
 * Module 12: error handling (console, alert)
