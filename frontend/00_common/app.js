@@ -1,1 +1,1 @@
-const app = angular.module('prototypeApp', []);
+const app = angular.module('prototypeApp', [ 'chart.js' ]);
