@@ -36,7 +36,6 @@ The webserver can be started via [docker-compose](https://docs.docker.com/compos
 
 ## Roadmap
 
-* Module 11: Javascript (Object.assign etc.)
 * Module 12: error handling (console, alert)
 
 
