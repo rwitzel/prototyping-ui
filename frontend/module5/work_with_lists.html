@@ -5,9 +5,10 @@
     <h3>Board Games</h3>
 
     <form class="col-lg-4 col-sm-4 pull-right">
-        <div class="form-group">
-            <label for="inp_filter_games">Filter expression:</label>
-            <input id="inp_filter_games" type="text" class="form-control" ng-model="filter_expr">
+        <div class="input-group">
+          <span class="input-group-addon" id="inp_filter_games_addon"><i class="glyphicon glyphicon-search"></i></span>
+          <input type="text" class="form-control" aria-describedby="inp_filter_games_addon"
+                 ng-model="filter_expr" placeholder="your filter expression here">
         </div>
     </form>
 
