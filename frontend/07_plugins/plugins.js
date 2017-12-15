@@ -1,3 +1,12 @@
+app.directive('toc', () => {
+    return {
+        restrict: 'A', // via attribute here
+        link: function(scope, element, attrs) { // register DOM listeners, update DOM ...
+            $(element).toc({headings: "h2,h3,h4"});
+        }
+    };
+});
+
 app.controller('pluginsCtrl', ($scope) => {
 
     $scope.countries = [

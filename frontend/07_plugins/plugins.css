@@ -1,3 +1,7 @@
 .dropdown-multiselect a {
     border-bottom: 0px;
 }
+
+.toc div {
+    padding-left:40px;
+}
