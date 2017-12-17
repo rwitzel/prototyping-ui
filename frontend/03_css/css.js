@@ -14,7 +14,7 @@ app.controller('formattingCtrl', ($scope) => {
         }
     ];
 
-    $scope.to_date = function(milliseconds_since_epoch) {
+    $scope.to_date = (milliseconds_since_epoch) => {
         return new Date(milliseconds_since_epoch)
     };
 });

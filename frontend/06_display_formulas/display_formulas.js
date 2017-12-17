@@ -1,7 +1,7 @@
 // BEGIN Generic setup code for MathJax in AngularJS
 app.directive("mathjax", () => {
     return {
-        link: function(scope, elm, attrs, ctrl) {
+        link: (scope, elm, attrs, ctrl) => {
                 if (typeof MathJax != "undefined")
                     MathJax.Hub.Queue(["Typeset",MathJax.Hub, elm[0]]);
               }
