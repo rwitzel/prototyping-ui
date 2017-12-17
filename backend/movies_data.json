@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Karla",
+    "release_date": "1965,1991",
+    "country": [
+      "Germany"
+    ]
+  },
+  {
+    "name": "Alien",
+    "release_date": "1979-05-25",
+    "country": [
+      "United Kingdom",
+      "United States"
+    ],
+    "budget": "$ 10M",
+    "box_office": "$ 150M"
+  },
+  {
+    "name": "Maudie",
+    "release_date": "2016-09-02",
+    "country": [
+      "Ireland",
+      "Canada"
+    ],
+    "budget": "$ 5.6M",
+    "box_office": "$ 9.7M"
+  },
+  {
+    "name": "Pina",
+    "release_date": "2011-02-13",
+    "country": [
+      "Germany"
+    ],
+    "box_office": "$ 14.6M"
+  },
+  {
+    "name": "L'Auberge Espagnole",
+    "release_date": "2002-05-17",
+    "country": [
+      "France",
+      "Spain"
+    ],
+    "budget": "€ 5M",
+    "box_office": "$ 31M"
+  },
+  {
+    "name": "Eldorado XXI",
+    "release_date": "2016-02-15",
+    "country": [
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "name": "Schtonk!",
+    "release_date": "1992-03-12",
+    "country": [
+      "Germany"
+    ],
+    "budget": "DEM 16M"
+  },
+  {
+    "name": "The Spirit of '45",
+    "release_date": "2013-03-15",
+    "country": [
+      "United Kingdom"
+    ]
+  },
+  {
+    "name": "Hero",
+    "release_date": "2002-10-24",
+    "country": [
+      "China"
+    ],
+    "budget": "$ 31M",
+    "box_office": "$ 177.4M"
+  },
+  {
+    "name": "Mes séances de lutte",
+    "release_date": "2013-11-06",
+    "country": [
+      "France"
+    ]
+  },
+  {
+    "name": "Die Kinder von Golzow",
+    "release_date": "1961-2007",
+    "country": [
+      "Germany"
+    ]
+  },
+  {
+    "name": "Airplane!",
+    "release_date": "1980-07-02",
+    "country": [
+      "United States"
+    ],
+    "budget": "$ 3.5M",
+    "box_office": "$ 130M"
+  },
+  {
+    "name": "Stalker",
+    "release_date": "1981-05-01",
+    "country": [
+      "Soviet Union"
+    ],
+    "budget": "RUR 6M"
+  },
+  {
+    "name": "Le fabuleux destin d'Amélie Poulain",
+    "release_date": "2001-04-25",
+    "country": [
+      "France",
+      "Germany"
+    ],
+    "budget": "$ 10M",
+    "box_office": "$ 174M"
+  },
+  {
+    "name": "Die Prüfung",
+    "release_date": "2016-05-19",
+    "country": [
+      "Germany"
+    ]
+  },
+  {
+    "name": "Computer Chess",
+    "release_date": "2013-11-07",
+    "country": [
+      "United States"
+    ],
+    "box_office": "$ 0.1M"
+  },
+  {
+    "name": "La Soupe aux choux",
+    "release_date": "1981-12-02",
+    "country": [
+      "France"
+    ],
+    "box_office": "$ 23M"
+  }
+]
