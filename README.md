@@ -35,5 +35,5 @@ The webserver can be started via [docker-compose](https://docs.docker.com/compos
 
 ## Roadmap
 
-* rework the exercise in the introduction
+* rework README.md
 
